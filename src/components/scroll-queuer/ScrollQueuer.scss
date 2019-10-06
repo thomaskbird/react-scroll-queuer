@@ -1,0 +1,30 @@
+.ScrollQueuer {
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    .expandIn {
+	    animation: expand-in .35s linear, fade-in 1s;
+	    visibility: visible;
+	}
+
+	@keyframes expand-in {
+	    0% {
+	        transform: scale(.85) translate(0, 50px);
+	    }
+
+	    100% {
+	        transform: scale(1) translate(0, 0);
+	    }
+	}
+
+	@keyframes fade-in {
+	    0% {
+	        opacity: 0;
+	    }
+
+	    100% {
+	        opacity: 1;
+	    }
+	}
+}
